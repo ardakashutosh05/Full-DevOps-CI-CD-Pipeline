@@ -24,6 +24,18 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      - name: Terraform Init
+        run: terraform init ./terraform
+  
+      - name: Terraform Apply
+        run: terraform apply -auto-approve ./terraform
 
       - name: Build Docker Image
         run: docker build -t devops-app .
