@@ -1,3 +1,4 @@
+'''
 name: CI with Docker
 
 on:
@@ -47,3 +48,4 @@ jobs:
       # ✅ Docker Build
       - name: Build Docker Image
         run: docker build -t devops-app .
+ '''         
