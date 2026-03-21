@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 DevOps Dashboard</h1>
+    <p id="status">Loading status...</p>
+
+    <div class="cards">
+        <div class="card">CI/CD ✅</div>
+        <div class="card">Docker 🐳</div>
+        <div class="card">Terraform 🌍</div>
+        <div class="card">AWS ☁️</div>
+    </div>
+
+    <button onclick="checkStatus()">Check App Status</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
