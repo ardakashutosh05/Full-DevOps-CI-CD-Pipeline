@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DevOps Project</title>
-    <style>
-        body {
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            font-family: Arial;
-        }
-        h1 {
-            margin-top: 100px;
-            font-size: 40px;
-        }
-        p {
-            color: #38bdf8;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>DevOps Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<h1>🚀 DevOps Project Running</h1>
-<p>CI/CD | Docker | Terraform | AWS</p>
+<div class="container">
+    <h1>🚀 DevOps Dashboard</h1>
+    <p id="status">Loading status...</p>
+
+    <div class="cards">
+        <div class="card">CI/CD ✅</div>
+        <div class="card">Docker 🐳</div>
+        <div class="card">Terraform 🌍</div>
+        <div class="card">AWS ☁️</div>
+    </div>
+
+    <button onclick="checkStatus()">Check App Status</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
 </html>
