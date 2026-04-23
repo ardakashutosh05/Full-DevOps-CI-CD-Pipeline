@@ -126,9 +126,10 @@ http://<EC2-PUBLIC-IP>
 
 ## 📈 Future Improvements
 
+* AWS CloudWatch monitoring and logging
 * Auto deployment via GitHub Actions (SSH)
 * DockerHub / AWS ECR integration
-* Load Balancer setup
+* Load Balancer for high availability (see Expense Management project)
 * Monitoring (Prometheus / Grafana)
 
 ---
@@ -145,7 +146,7 @@ AWS & DevOps Engineer | Pune, Maharashtra
 
 ## ⭐ Conclusion
 
-This project demonstrates real-world DevOps practices including automation, scalability, and cloud deployment.
+This project demonstrates real-world DevOps practices, including automation, scalability, and cloud deployment.
 
 ---
 
