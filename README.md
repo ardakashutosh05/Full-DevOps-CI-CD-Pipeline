@@ -135,7 +135,11 @@ http://<EC2-PUBLIC-IP>
 
 ## 👨‍💻 Author
 
-Ashutosh (DevOps Enthusiast)
+**Ashutosh Ardak**
+AWS & DevOps Engineer | Pune, Maharashtra
+📧 ardakashutosh05@gmail.com
+🔗 [LinkedIn](your-linkedin-url)
+🔗 [GitHub](https://github.com/ardakashutosh05)
 
 ---
 
